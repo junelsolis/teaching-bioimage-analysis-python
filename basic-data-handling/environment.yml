@@ -1,11 +1,11 @@
-name: bias-env-test
+name: basic-data-handling-env
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - ipykernel
-  - jupyterlab
-  - pandas
+  - black
+  - jupyterlab=3.5.0
+  - pandas=1.5.1
   - matplotlib
+  - scipy=1.9.3
   - seaborn
-  - scipy
