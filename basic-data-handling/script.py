@@ -33,10 +33,24 @@ print(f"{str_1} able to do basic match, and I am {str_2}.")
 # reading CSV's into Pandas dataframes
 df1 = pd.read_csv("data/Results_01.csv")
 df1.head()
+df1.describe()
+type(df1)
 
 # getting basic statistics
 df1["Area"]
+df1["Area"].describe()
 
+df1.columns = (
+    "",
+    "label",
+    "area",
+    "perimeter",
+    "circularity",
+    "ar",
+    "roundness",
+    "solidity",
+)
+df1.describe()
 
 # Book 2
 # How to do simple plots with Pandas
